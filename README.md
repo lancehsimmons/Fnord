@@ -1,13 +1,13 @@
 # Fnord
 
-social paramedia platform
+Social Paramedia Platform
 
-(Fluxanon Hub
+- Fluxanon Hub
 - Your anti misapperception portal
 - Social Paramedia
 - Media Massager
 - Act of Information Freedom
-- You don’t know what doesn’t hurt you)
+- You don’t know what doesn’t hurt you
 
 
 ## Project Description
@@ -27,7 +27,8 @@ https://whimsical.com/fnord-HJHWbWrjqYsGQDxWD59vsn
 https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU3
 
 
-"records": [
+{
+    "records": [
         {
             "id": "rec0gJDlBfcmQJY17",
             "fields": {},
@@ -52,6 +53,7 @@ https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU
             "createdTime": "2021-10-22T00:05:46.000Z"
         }
     ]
+}
 
 
 ## MVP
