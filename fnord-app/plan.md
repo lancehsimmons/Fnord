@@ -26,7 +26,7 @@
   - once 3 posts are acrewed in void a void post is generated 
     - sent to api
     - separate component for void post?
-    - how does logic for auto-post work? 
+    - how does logic for auto-post work? toggleFetch through props, that's how.
       - voidCloud button = 3 clicks is trigger for api post
       - button for posting void? 
         - animated eye 
