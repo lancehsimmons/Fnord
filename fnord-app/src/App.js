@@ -53,7 +53,7 @@ function App() {
 
   return (
     <div className="App">
-      <Link to='/' exact>
+      <Link to='/'>
             <h1>Fnord</h1>
       </Link>
 
@@ -76,7 +76,7 @@ function App() {
       
 
       <main>
-        <RenderPost />
+        <Route path='/' exact><RenderPost /></Route>
 
         <Route path='/post'><Post /></Route>
 
