@@ -4,7 +4,7 @@ import axios from 'axios'
 const DisplayPost = () => {
   return (
     <div>
-      
+      <h4>some junk</h4>
     </div>
   )
 }
