@@ -1,4 +1,3 @@
-/*
 1- i dependencies
 2- file structure
 3- create components
@@ -18,24 +17,3 @@
   - once 3 posts are acrewed in void a void post is generated 
     - sent to api
 - 
-
-*/
-
-
-
-import './App.css';
-import axios from 'axios'
-import { useEffect, useState } from 'react'
-
-function App() {
-
-
-
-  return (
-    <div className="App">
-      <h1>Fnord</h1>
-    </div>
-  );
-}
-
-export default App;
