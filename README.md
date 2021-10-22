@@ -2,9 +2,9 @@
 
 Social Paramedia Platform
 
-- Fluxanon Hub
 - Your anti misapperception portal
 - Social Paramedia
+- Fluxanon Hub
 - Media Massager
 - Act of Information Freedom
 - You don’t know what doesn’t hurt you
