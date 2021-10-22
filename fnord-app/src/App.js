@@ -30,6 +30,7 @@ import How from './components/How.js'
 import Post from './components.Post.js'
 import Why from './components.Why.js'
 import Tools from './components.Tools.js'
+import RenderPost from './components.Tools.js'
 
 function App() {
 
@@ -41,16 +42,16 @@ function App() {
         <div>
             <h1>Fnord</h1>
           <nav>
-              <Post />
-              <Tools />
-              <How />
-              <Why />
-            </nav>
+            <Post />
+            <Tools />
+            <How />
+            <Why />
+          </nav>
         </div>
       </Link>
 
       <main>
-        
+        <RenderPost />
         
       </main>
 
