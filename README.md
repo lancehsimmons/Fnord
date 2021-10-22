@@ -1,4 +1,5 @@
 # Fnord
+
 social paramedia platform
 
 (Fluxanon Hub
@@ -24,6 +25,7 @@ https://whimsical.com/fnord-HJHWbWrjqYsGQDxWD59vsn
 ## API and Data Sample
 
 https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU3
+
 
 "records": [
         {
@@ -53,6 +55,7 @@ https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU
 
 
 ## MVP
+
 -Functioning React app with 6 components
   -root: title, nav, and post feed
   -why: inspiration and related links
@@ -62,6 +65,7 @@ https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU
   -abyss: placeholder abyss page rendering example of a limited conglomeration of all posts
 
 ## POST-MVP
+
 -Functioning tools: scrambler, folder, random wikipedia api mesher
 -active abyss page rendering character limited conglomerated mega-post from api
 -active library feature to save favorite posts
