@@ -1,9 +1,10 @@
-
+import { useState, useEffect } from 'react'
+import axios from 'axios'
 
 const DisplayPost = () => {
   return (
     <div>
-      <h3>render post</h3>
+      
     </div>
   )
 }

@@ -86,7 +86,11 @@ function App() {
         ))}
         <Route path='/' exact><RenderPost /></Route>
 
-        <Route path='/post'><Post /></Route>
+        <Route path='/post'>
+          <Post
+          toggleFetch={toggleFetch}
+          setToggleFetch={setToggleFetch}/>
+        </Route>
 
         <Route path='/tools'><Tools /></Route>
 
