@@ -72,8 +72,8 @@ https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Proposal                  |    H     |      2hrs      |     5hrs      |    5hrs     |
 | Airtable setup            |    H     |     1hrs      |      .5hr      |     .5hr     |
-| Clickable icons           |    H     |      1hrs      |      1hr      |     1hr     |
-| Data population pg 1      |    H     |      3hrs      |     3hrs      |    3hrs     |
+| react structure           |    H     |      3hrs      |      1hr      |     1hr     |
+| component logic     |    H     |      7hrs      |     3hrs      |    3hrs     |
 | Data population pg 2      |    H     |      3hrs      |     2hrs      |    2hrs     |
 | Data population pg 3      |    H     |      3hrs      |     2hrs      |    2hrs     |
 | Form creation pg 1        |    H     |      2hrs      |     2hrs      |    2hrs     |
