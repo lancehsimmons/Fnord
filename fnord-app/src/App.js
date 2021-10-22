@@ -22,36 +22,70 @@
 */
 
 
-
+import { Link, Route } from 'react-router-dom'
 import './App.css';
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import How from './components/How.js'
-import Post from './components.Post.js'
-import Why from './components.Why.js'
-import Tools from './components.Tools.js'
-import RenderPost from './components.Tools.js'
+import Post from './components/Post.js'
+import Why from './components/Why.js'
+import Tools from './components/Tools.js'
+import RenderPost from './components/RenderPost.js'
 
 function App() {
+  const [posts, setPosts] = useState([])
+  const [toggleFetch, setToggleFetch] = useState(true)
 
+  const API_URL = 'https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU3'
 
+  useEffect(() => {
+    console.log('Getting Posts');
+
+    const getPosts = async () => {
+      const resp = await axios.get(API_URL);
+      console.log(resp.data);
+      setPosts(resp.data.records);
+    }
+    console.log(posts)
+
+    getPosts();
+  }, []);
 
   return (
     <div className="App">
       <Link to='/' exact>
-        <div>
             <h1>Fnord</h1>
+      </Link>
+
+        <div>
           <nav>
-            <Post />
-            <Tools />
-            <How />
-            <Why />
+          <Link to='/post'>
+              <em>post</em>
+            </Link>
+            <Link to='/tools'>
+              <em>tools</em>
+            </Link>
+            <Link to='/how'>
+              <em>how</em>
+            </Link>
+            <Link to='/why'>
+              <em>why</em>
+            </Link>
           </nav>
         </div>
-      </Link>
+      
 
       <main>
         <RenderPost />
+
+        <Route path='/post'><Post /></Route>
+
+        <Route path='/tools'><Tools /></Route>
+
+        <Route path='/how'><How /></Route>
+
+        <Route path='/why'><Why /></Route>
+          
         
       </main>
 
