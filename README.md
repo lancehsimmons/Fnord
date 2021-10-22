@@ -24,7 +24,7 @@ https://whimsical.com/fnord-HJHWbWrjqYsGQDxWD59vsn
 
 ## API and Data Sample
 
-https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU3
+https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=
 
 
 {
