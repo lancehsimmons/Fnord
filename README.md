@@ -54,7 +54,7 @@ https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU
 
 ## MVP
 -Functioning React app with 6 components
-  -root: title, nav, and post stream
+  -root: title, nav, and post feed
   -why: inspiration and related links
   -how: how posting and void posting works
   -post and void post: rendering to root from api using one component
@@ -63,7 +63,7 @@ https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU
 
 ## POST-MVP
 -Functioning tools: scrambler, folder, random wikipedia api mesher
--active abyss page renderign character limited mega-post from api
+-active abyss page rendering character limited conglomerated mega-post from api
 -active library feature to save favorite posts
 
 ## Timeframes
@@ -71,21 +71,12 @@ https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU
 | Component                 | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Proposal                  |    H     |      2hrs      |     5hrs      |    5hrs     |
-| Airtable setup            |    H     |     1hrs      |      .5hr      |     .5hr     |
-| react structure           |    H     |      3hrs      |      1hr      |     1hr     |
-| component logic     |    H     |      7hrs      |     3hrs      |    3hrs     |
-| Data population pg 2      |    H     |      3hrs      |     2hrs      |    2hrs     |
-| Data population pg 3      |    H     |      3hrs      |     2hrs      |    2hrs     |
-| Form creation pg 1        |    H     |      2hrs      |     2hrs      |    2hrs     |
-| Form creation pg 2        |    H     |      2hrs      |     1 hr      |    1 hr     |
-| Form creation pg 3        |    H     |      2hrs      |     1 hr      |     1hr     |
-| Data creation/update pg 1 |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Data creation/update pg 2 |    H     |      3hrs      |      1hr      |     1hr     |
-| Data creation/update pg 3 |    H     |      3hrs      |      1hr      |     1hr     |
-| Data deletion pg 1        |    H     |      2hrs      |      1hr      |     1hr     |
-| Data deletion pg 2        |    H     |      2hrs      |      1hr      |     1hr     |
-| Data deletion pg 3        |    H     |      2hrs      |      1hr      |     1hr     |
-| Component CSS pg 1        |    H     |      3hrs      |     4hrs      |    4hrs     |
-| Component CSS pg 2        |    H     |      3hrs      |     4hrs      |    4hrs     |
-| Component CSS pg 3        |    H     |      3hrs      |     4hrs      |    4hrs     |
-| Total                     |    H     |    42.5hrs     |     35hrs     |    35hrs    |
+| Airtable setup            |    H     |      1hrs      |      .5hr     |     .5hr    |
+| react structure           |    H     |      3hrs      |               |             |
+|  post logic               |    H     |      7hrs      |               |             |
+|  delete logic             |    H     |      4hrs      |               |             |
+| abyss logic               |    H     |      4hrs      |               |             |
+| tools logic               |    H     |      3hrs      |               |             |
+| embedded component info   |    H     |      3hrs      |               |             |
+| css styling               |    H     |      7hrs      |               |             |
+| Total                     |    H     |      34hrs     |               |             |
