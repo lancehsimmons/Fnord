@@ -26,6 +26,10 @@
 import './App.css';
 import axios from 'axios'
 import { useEffect, useState } from 'react'
+import How from './components/How.js'
+import Post from './components.Post.js'
+import Why from './components.Why.js'
+import Tools from './components.Tools.js'
 
 function App() {
 
@@ -33,7 +37,23 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Fnord</h1>
+      <Link to='/' exact>
+        <div>
+            <h1>Fnord</h1>
+          <nav>
+              <Post />
+              <Tools />
+              <How />
+              <Why />
+            </nav>
+        </div>
+      </Link>
+
+      <main>
+        
+        
+      </main>
+
     </div>
   );
 }
