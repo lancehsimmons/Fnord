@@ -3,11 +3,11 @@
 social paramedia platform
 
 (Fluxanon Hub
-Your anti misapperception portal
-Social Paramedia
-Media Massager
-Act of Information Freedom
-You don’t know what doesn’t hurt you)
+- Your anti misapperception portal
+- Social Paramedia
+- Media Massager
+- Act of Information Freedom
+- You don’t know what doesn’t hurt you)
 
 
 ## Project Description
@@ -56,19 +56,19 @@ https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU
 
 ## MVP
 
--Functioning React app with 6 components
-  -root: title, nav, and post feed
-  -why: inspiration and related links
-  -how: how posting and void posting works
-  -post and void post: rendering to root from api using one component
-  -tools: text scrambler and text folder place holders for added functionality later
-  -abyss: placeholder abyss page rendering example of a limited conglomeration of all posts
+- Functioning React app with 6 components
+  - root: title, nav, and post feed
+  - why: inspiration and related links
+  - how: how posting and void posting works
+  - post and void post: rendering to root from api using one component
+  - tools: text scrambler and text folder place holders for added functionality later
+  - abyss: placeholder abyss page rendering example of a limited conglomeration of all posts
 
 ## POST-MVP
 
--Functioning tools: scrambler, folder, random wikipedia api mesher
--active abyss page rendering character limited conglomerated mega-post from api
--active library feature to save favorite posts
+- Functioning tools: scrambler, folder, random wikipedia api mesher
+- active abyss page rendering character limited conglomerated mega-post from api
+- active library feature to save favorite posts
 
 ## Timeframes
 
