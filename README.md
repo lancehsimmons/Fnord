@@ -1,17 +1,12 @@
 # Fnord
 social paramedia platform
 
-Fnord is a discordian inspired  
-
-#
-
-# Project Overview
-
-
-
-
-## Fnord
-social paramedia platform
+(Fluxanon Hub
+Your anti misapperception portal
+Social Paramedia
+Media Massager
+Act of Information Freedom
+You don’t know what doesn’t hurt you)
 
 
 ## Project Description
@@ -57,3 +52,40 @@ https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU
     ]
 
 
+## MVP
+-Functioning React app with 6 components
+  -root: title, nav, and post stream
+  -why: inspiration and related links
+  -how: how posting and void posting works
+  -post and void post: rendering to root from api using one component
+  -tools: text scrambler and text folder place holders for added functionality later
+  -abyss: placeholder abyss page rendering example of a limited conglomeration of all posts
+
+## POST-MVP
+-Functioning tools: scrambler, folder, random wikipedia api mesher
+-active abyss page renderign character limited mega-post from api
+-active library feature to save favorite posts
+
+## Timeframes
+
+| Component                 | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Proposal                  |    H     |      2hrs      |     5hrs      |    5hrs     |
+| Airtable setup            |    H     |     1hrs      |      .5hr      |     .5hr     |
+| Clickable icons           |    H     |      1hrs      |      1hr      |     1hr     |
+| Data population pg 1      |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Data population pg 2      |    H     |      3hrs      |     2hrs      |    2hrs     |
+| Data population pg 3      |    H     |      3hrs      |     2hrs      |    2hrs     |
+| Form creation pg 1        |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Form creation pg 2        |    H     |      2hrs      |     1 hr      |    1 hr     |
+| Form creation pg 3        |    H     |      2hrs      |     1 hr      |     1hr     |
+| Data creation/update pg 1 |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Data creation/update pg 2 |    H     |      3hrs      |      1hr      |     1hr     |
+| Data creation/update pg 3 |    H     |      3hrs      |      1hr      |     1hr     |
+| Data deletion pg 1        |    H     |      2hrs      |      1hr      |     1hr     |
+| Data deletion pg 2        |    H     |      2hrs      |      1hr      |     1hr     |
+| Data deletion pg 3        |    H     |      2hrs      |      1hr      |     1hr     |
+| Component CSS pg 1        |    H     |      3hrs      |     4hrs      |    4hrs     |
+| Component CSS pg 2        |    H     |      3hrs      |     4hrs      |    4hrs     |
+| Component CSS pg 3        |    H     |      3hrs      |     4hrs      |    4hrs     |
+| Total                     |    H     |    42.5hrs     |     35hrs     |    35hrs    |
