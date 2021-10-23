@@ -78,13 +78,6 @@ function App() {
 
       <main>
 
-        {/* {posts.map((post) => (
-          <div>
-            <h2>{post.fields.title}</h2>
-            <p>{post.fields.body}</p>
-          </div>
-        ))} */}
-
         <Route path='/' exact>
           {posts.map((post) => (
             <RenderPost
