@@ -10,15 +10,25 @@ const DisplayPost = ({ postData, toggleFetch, setToggleFetch }) => {
     await axios.delete(API_URL + `&records[]=${postData.id}`);
 
     setToggleFetch(!toggleFetch);
-}
+  }
+  
+  const addVoid = () => {
+    console.log(`add void ${postData.id} was clicked`)
+  }
 
   return (
     <div id={postData.id}>
+      <hr/>
       <h4>{postData.fields.title}</h4>
       <p>{postData.fields.body}</p>
       <h5>{postData.fields.author}</h5>
 
+      <button
+        id={postData.id}
+        onClick={addVoid}
+      >void</button>
       <button onClick={deleteBlogPost}>Delete</button>
+      <hr/>
     </div>
   )
 }
