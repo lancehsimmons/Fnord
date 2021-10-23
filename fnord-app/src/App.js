@@ -78,13 +78,23 @@ function App() {
 
       <main>
 
-        {posts.map((post) => (
+        {/* {posts.map((post) => (
           <div>
             <h2>{post.fields.title}</h2>
             <p>{post.fields.body}</p>
           </div>
-        ))}
-        <Route path='/' exact><RenderPost /></Route>
+        ))} */}
+
+        <Route path='/' exact>
+          {posts.map((post) => (
+            <RenderPost
+              postData={post}
+              key={post.id}
+              toggleFetch={toggleFetch}
+              setToggleFetch={setToggleFetch}
+            />
+          ))}
+        </Route>
 
         <Route path='/post'>
           <Post
