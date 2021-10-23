@@ -35,6 +35,7 @@ import RenderPost from './components/RenderPost.js'
 function App() {
   const [posts, setPosts] = useState([])
   const [toggleFetch, setToggleFetch] = useState(true)
+  const [voidCounter, setVoidCounter] = useState(0)
 
   const API_URL = 'https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU3'
 
@@ -81,6 +82,8 @@ function App() {
 
       <main>
 
+        <h3>{voidCounter}</h3>
+
         <Route path='/' exact>
           {posts.map((post) => (
             <RenderPost
@@ -89,6 +92,8 @@ function App() {
               toggleFetch={toggleFetch}
               setToggleFetch={setToggleFetch}
               voidCloud={voidCloud}
+              voidCounter={voidCounter}
+              setVoidCounter={setVoidCounter}
             />
           ))}
         </Route>

@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useState } from 'react'
 
-const Post = ({ toggleFetch, setToggleFetch }) => {
+const Post = ({ toggleFetch, setToggleFetch, }) => {
   const [title, setTitle] = useState('')
   const [body, setBody] = useState('')
   const [author, setAuthor] = useState('')

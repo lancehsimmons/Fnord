@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const API_URL = 'https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU3'
 
-const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud }) => {
+const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, voidCounter, setVoidCounter }) => {
 
   const deleteBlogPost = async () => {
     await axios.delete(API_URL + `&records[]=${postData.id}`);
@@ -15,6 +15,8 @@ const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud }) => {
   const addVoid = () => {
     console.log(`add void ${postData.id} was clicked`)
     voidCloud.push(postData.fields.body)
+    setVoidCounter(voidCounter++)
+
     console.log(voidCloud)
   }
 
