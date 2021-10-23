@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const API_URL = 'https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU3'
 
-const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, voidCounter, setVoidCounter }) => {
+const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, setVoidCloud, voidCounter, setVoidCounter }) => {
 
   const deleteBlogPost = async () => {
     await axios.delete(API_URL + `&records[]=${postData.id}`);
@@ -12,9 +12,15 @@ const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, voidCou
   
   const addVoid = () => {
     console.log(`add void ${postData.id} was clicked`)
-    voidCloud.push(postData.fields.body)
+    setVoidCloud(voidCloud + ` ${postData.fields.body}`)
     setVoidCounter(voidCounter + 1)
 
+    // if (voidCounter === 3) {
+    //   console.log('terminal density of void cloud has been reached')
+    //   console.log(voidCloud)
+    //   voidCloud = []
+    //   console.log(voidCloud)
+    // }
     console.log(voidCloud)
   }
 

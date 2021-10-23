@@ -32,14 +32,15 @@ import Why from './components/Why.js'
 import Tools from './components/Tools.js'
 import RenderPost from './components/RenderPost.js'
 
+
+
 function App() {
   const [posts, setPosts] = useState([])
   const [toggleFetch, setToggleFetch] = useState(true)
   const [voidCounter, setVoidCounter] = useState(0)
+  const [voidCloud, setVoidCloud] = useState('')
 
   const API_URL = 'https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU3'
-
-  const voidCloud = []
 
   useEffect(() => {
     console.log('Getting Posts');
@@ -53,6 +54,10 @@ function App() {
 
     getPosts();
   }, [toggleFetch]);
+
+  useEffect(() => {
+
+  })
 
 
   return (
@@ -92,6 +97,7 @@ function App() {
               toggleFetch={toggleFetch}
               setToggleFetch={setToggleFetch}
               voidCloud={voidCloud}
+              setVoidCloud={setVoidCloud}
               voidCounter={voidCounter}
               setVoidCounter={setVoidCounter}
             />
