@@ -38,6 +38,8 @@ function App() {
 
   const API_URL = 'https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU3'
 
+  const voidCloud = []
+
   useEffect(() => {
     console.log('Getting Posts');
 
@@ -50,6 +52,7 @@ function App() {
 
     getPosts();
   }, [toggleFetch]);
+
 
   return (
     <div className="App">
@@ -85,14 +88,16 @@ function App() {
               key={post.id}
               toggleFetch={toggleFetch}
               setToggleFetch={setToggleFetch}
+              voidCloud={voidCloud}
             />
           ))}
         </Route>
 
         <Route path='/post'>
           <Post
-          toggleFetch={toggleFetch}
-          setToggleFetch={setToggleFetch}/>
+            toggleFetch={toggleFetch}
+            setToggleFetch={setToggleFetch}
+          />
         </Route>
 
         <Route path='/tools'><Tools /></Route>
