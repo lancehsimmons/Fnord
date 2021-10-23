@@ -49,7 +49,7 @@ function App() {
     console.log(posts)
 
     getPosts();
-  }, []);
+  }, [toggleFetch]);
 
   return (
     <div className="App">
