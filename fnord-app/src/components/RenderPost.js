@@ -1,6 +1,4 @@
-import { useState, useEffect } from 'react'
 import axios from 'axios'
-import { Link } from 'react-router-dom'
 
 const API_URL = 'https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU3'
 
@@ -15,7 +13,7 @@ const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, voidCou
   const addVoid = () => {
     console.log(`add void ${postData.id} was clicked`)
     voidCloud.push(postData.fields.body)
-    setVoidCounter(voidCounter++)
+    setVoidCounter(voidCounter + 1)
 
     console.log(voidCloud)
   }

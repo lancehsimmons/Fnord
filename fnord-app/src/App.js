@@ -49,7 +49,7 @@ function App() {
       console.log(resp.data);
       setPosts(resp.data.records);
     }
-    console.log(posts)
+    // console.log(posts)
 
     getPosts();
   }, [toggleFetch]);
