@@ -21,7 +21,6 @@
 
 */
 
-
 import { Link, Route } from 'react-router-dom'
 import './App.css';
 import axios from 'axios'
@@ -33,12 +32,12 @@ import Tools from './components/Tools.js'
 import RenderPost from './components/RenderPost.js'
 
 
-
 function App() {
   const [posts, setPosts] = useState([])
   const [toggleFetch, setToggleFetch] = useState(true)
   const [voidCounter, setVoidCounter] = useState(0)
   const [voidCloud, setVoidCloud] = useState('')
+  const [voidFetch, setVoidFetch] = useState(false)
 
   const API_URL = 'https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU3'
 
@@ -59,6 +58,13 @@ function App() {
 
   })
 
+  const counterCheck = () => {
+    if (voidCounter === 3) {
+      setVoidCounter(0)
+      setVoidCloud('')
+    }
+  
+  }
 
   return (
     <div className="App">
@@ -100,6 +106,7 @@ function App() {
               setVoidCloud={setVoidCloud}
               voidCounter={voidCounter}
               setVoidCounter={setVoidCounter}
+              counterCheck={counterCheck}
             />
           ))}
         </Route>
