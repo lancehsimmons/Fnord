@@ -22,7 +22,6 @@
 */
 
 import { Link, Route } from 'react-router-dom'
-import './App.css';
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import How from './components/How.js'
@@ -32,6 +31,12 @@ import Tools from './components/Tools.js'
 import RenderPost from './components/RenderPost.js'
 import { DropdownButton, Dropdown } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
+import './App.css';
+
+const cursorStyle = {
+  color: 'red',
+  backgroundColor: 'red',
+}
 
 function App() {
   const [posts, setPosts] = useState([])
@@ -62,6 +67,8 @@ function App() {
     console.log(catchVoid)
   }
 
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -73,17 +80,17 @@ function App() {
           </div>
 
           <div>
-          <DropdownButton id="dropdown-basic-button" title="menu">
+          <DropdownButton style={cursorStyle} id="dropdown-basic-button" title="menu">
             <Dropdown.Item ><Link to='/post'>
                   <em>post</em>
                 </Link></Dropdown.Item>
-            <Dropdown.Item href="#/action-2"> <Link to='/tools'>
+            <Dropdown.Item > <Link to='/tools'>
                   <em>tools</em>
                 </Link></Dropdown.Item>
-            <Dropdown.Item href="#/action-3"><Link to='/how'>
+            <Dropdown.Item ><Link to='/how'>
                   <em>how</em>
               </Link></Dropdown.Item>
-              <Dropdown.Item href="#/action-3"><Link to='/why'>
+              <Dropdown.Item ><Link to='/why'>
                   <em>why</em>
                 </Link></Dropdown.Item>
           </DropdownButton>
