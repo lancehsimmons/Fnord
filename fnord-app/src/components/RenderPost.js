@@ -4,13 +4,15 @@ const API_URL = 'https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key
 
 const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, setVoidCloud, voidCounter, setVoidCounter, catchTheVoid }) => {
 
-  const deleteBlogPost = async () => {
+  const deleteBlogPost = async (ev) => {
+    ev.preventDefault()
     await axios.delete(API_URL + `&records[]=${postData.id}`);
 
     setToggleFetch(!toggleFetch);
   }
   
-  const addVoid = () => {
+  const addVoid = (ev) => {
+    ev.preventDefault()
     setVoidCounter(voidCounter + 1)
     setVoidCloud(voidCloud + ` ${postData.fields.body}`)
     catchTheVoid()
@@ -32,10 +34,10 @@ const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, setVoid
 
       <button
         id={postData.id}
-        onClick={() => addVoid()}
+        onClick={(ev) => addVoid(ev)}
       >void</button>
 
-      <button onClick={deleteBlogPost}>Delete</button>
+      <button onClick={(ev) => deleteBlogPost(ev)}>Delete</button>
       <hr/>
     </div>
   )
