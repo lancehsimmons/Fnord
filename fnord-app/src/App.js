@@ -80,19 +80,24 @@ function App() {
           </div>
 
           <div>
-          <DropdownButton style={cursorStyle} id="dropdown-basic-button" title="menu">
-            <Dropdown.Item ><Link to='/post'>
-                  <em>post</em>
-                </Link></Dropdown.Item>
-            <Dropdown.Item > <Link to='/tools'>
-                  <em>tools</em>
-                </Link></Dropdown.Item>
-            <Dropdown.Item ><Link to='/how'>
-                  <em>how</em>
-              </Link></Dropdown.Item>
-              <Dropdown.Item ><Link to='/why'>
-                  <em>why</em>
-                </Link></Dropdown.Item>
+            <DropdownButton id="dropdown-basic-button" title="menu">
+              
+            <Dropdown.Item href='/post'>
+              <h5>post</h5>
+            </Dropdown.Item>
+              
+              <Dropdown.Item href='/tools'>
+              <h5>tools</h5>
+            </Dropdown.Item>
+              
+            <Dropdown.Item href='/how'>
+              <h5>how</h5>
+              </Dropdown.Item>
+              
+            <Dropdown.Item href='/why'>
+              <h5>why</h5>
+            </Dropdown.Item>
+              
           </DropdownButton>
           </div>
 

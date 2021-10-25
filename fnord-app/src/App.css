@@ -12,7 +12,7 @@
   margin: 0px 50px 0px 50px;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -22,7 +22,8 @@
 }
 
 .dropdown-toggle {
-  background-color: greenyellow
+  background-color: rgb(252, 217, 100);
+  border-color: rgb(252, 217, 100);
 }
 
 main {
