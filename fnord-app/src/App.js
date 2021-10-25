@@ -64,26 +64,30 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Link to='/'>
-              <h1>Fnord</h1>
-        </Link>
-
-          <div>
-            <nav>
-            <Link to='/post'>
-                <em>post</em>
-              </Link>
-              <Link to='/tools'>
-                <em>tools</em>
-              </Link>
-              <Link to='/how'>
-                <em>how</em>
-              </Link>
-              <Link to='/why'>
-                <em>why</em>
-              </Link>
-            </nav>
+        <div id='titlediv'>
+          <div id='title'>
+          <Link to='/'>
+                <h1>Fnord</h1>
+          </Link>
           </div>
+
+            <div>
+              <nav>
+              <Link to='/post'>
+                  <em>post</em>
+                </Link>
+                <Link to='/tools'>
+                  <em>tools</em>
+                </Link>
+                <Link to='/how'>
+                  <em>how</em>
+                </Link>
+                <Link to='/why'>
+                  <em>why</em>
+                </Link>
+              </nav>
+            </div>
+        </div>
         </header>
 
       <main>
