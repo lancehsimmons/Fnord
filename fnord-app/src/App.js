@@ -30,6 +30,7 @@ import Post from './components/Post.js'
 import Why from './components/Why.js'
 import Tools from './components/Tools.js'
 import RenderPost from './components/RenderPost.js'
+import { Menu, Submenu } from 'antd'
 
 
 function App() {
@@ -61,6 +62,10 @@ function App() {
     console.log(catchVoid)
   }
 
+  const handleClick = (e) => {
+    console.log('click ', e);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -70,6 +75,17 @@ function App() {
                 <h1>Fnord</h1>
           </Link>
           </div>
+
+          <Menu
+        onClick={handleClick()}
+        style={{ width: 256 }}
+        defaultSelectedKeys={['1']}
+        defaultOpenKeys={['sub1']}
+        mode="inline"
+          >
+            <Menu.Item key="1">Option 1</Menu.Item>
+            <Menu.Item key="2">Option 2</Menu.Item>
+      </Menu>
 
             <div>
               <nav>
