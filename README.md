@@ -16,7 +16,7 @@ Fnord [sic](https://en.wikipedia.org/wiki/Principia_Discordia) seeks the liberat
 
 Users are prompted to make posts expressing their thoughts under a pseudonym. However, when displayed, the contents of these posts are redacted. In this way users are able to freely express themselves without fear of reproach. The other option for engagement takes two parts: users can select previous posts to be added to void cloud. Once the cloud reaches terminal capacity a new, fully-visible post is generated from an agglomeration of the material added to the cloud. All posts can be added to the cloud or deleted. 
 
-Fnord also provides tools for processing texts with the methods used by Dadaists and later popularized by William Burroughs and Bryan Gysin. Fnord considers itself an act of information freedom. 
+Fnord also provides tools for processing texts with the methods used by Dadaists and later popularized by William Burroughs and Bryan Gysin. Tools takes two entered by the user and processes them into one new text. The new congolmerate text serves as the starting point for new concepts or approaches.
 
 ## Wireframes and Component Hierarchy
 
@@ -63,15 +63,16 @@ https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=
   - root: title, nav, and post feed
   - why: inspiration and related links
   - how: how posting and void posting works
-  - post and void post: rendering to root from api using one component
+  - post: write to api and render posts to root
   - tools: text scrambler and text folder place holders for added functionality later
   - abyss: placeholder abyss page rendering example of a limited conglomeration of all posts
 
 ## POST-MVP
 
+- void posting: rendering to root from void cloud
 - Functioning tools: scrambler, folder, random wikipedia api mesher
 - active abyss page rendering character limited conglomerated mega-post from api
-- active library feature to save favorite posts
+- active library feature to save favorite void posts
 
 ## Timeframes
 
@@ -79,9 +80,10 @@ https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Proposal                  |    H     |      2hrs      |     5hrs      |    5hrs     |
 | Airtable setup            |    H     |      1hrs      |      .5hr     |     .5hr    |
-| react structure           |    H     |      3hrs      |               |             |
-|  post logic               |    H     |      7hrs      |               |             |
-|  delete logic             |    H     |      4hrs      |               |             |
+| plan/pseudo-code          |    H     |      1hrs      |      1hr      |     1hr     |
+| react structure           |    H     |      3hrs      |      3.25hr   |    3.25hr   |
+|  post logic               |    H     |      7hrs      |      5hr      |             |
+|  delete logic             |    H     |      2hrs      |      40min    |             |
 | abyss logic               |    H     |      4hrs      |               |             |
 | tools logic               |    H     |      3hrs      |               |             |
 | embedded component info   |    H     |      3hrs      |               |             |
