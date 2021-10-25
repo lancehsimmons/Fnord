@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 0px, 100px, 0px, 100px;
 }
 
 .App-header {
@@ -11,6 +12,16 @@
   color: white;
 }
 
+
+.feed {
+  display: flex-column;
+  margin: 0px, 100px, 0px, 100px;
+}
+
+.post {
+  text-align: left;
+}
+
 p {
   display: inline;
   background: black;
@@ -18,6 +29,7 @@ p {
   margin: 5px;
   font-size: 1em;
   line-height: 2.2em;
+  text-justify: left;
 }
 
 .App-link {

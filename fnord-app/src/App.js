@@ -91,6 +91,7 @@ function App() {
         <h3>{voidCounter}</h3>
 
         <Route path='/' exact>
+          <div >
           {posts.map((post) => (
             <RenderPost
               postData={post}
@@ -107,6 +108,7 @@ function App() {
               catchTheVoid={catchTheVoid}
             />
           ))}
+          </div>
         </Route>
 
         <Route path='/post'>
