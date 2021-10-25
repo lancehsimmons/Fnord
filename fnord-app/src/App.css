@@ -5,7 +5,6 @@
 
 .App-header {
   background-color: #6981b3;
-  display: flex;
 }
 
 #titlediv {
@@ -20,8 +19,6 @@
   color: black;
   text-decoration: none;
 }
-
-
 
 main {
   margin: 30px 50px 30px 50px;
