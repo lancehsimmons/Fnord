@@ -25,7 +25,7 @@ main {
   margin: 0px, 10em, 0px, 10em;
 }
 
-p {
+.redacted {
   display: inline;
   background: black;
   padding: 5px;
