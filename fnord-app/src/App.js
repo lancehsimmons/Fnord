@@ -38,6 +38,7 @@ function App() {
   const [voidCounter, setVoidCounter] = useState(0)
   const [voidCloud, setVoidCloud] = useState('')
   const [voidFetch, setVoidFetch] = useState(false)
+  const [catchVoid, setCatchVoid] = useState('')
 
   const API_URL = 'https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU3'
 
@@ -54,16 +55,10 @@ function App() {
     getPosts();
   }, [toggleFetch]);
 
-  useEffect(() => {
-
-  })
-
-  const counterCheck = () => {
-    if (voidCounter === 3) {
-      setVoidCounter(0)
-      setVoidCloud('')
-    }
-  
+  const catchTheVoid = () => {
+    setCatchVoid(voidCloud)
+    console.log('void terminal density exceeded')
+    console.log(catchVoid)
   }
 
   return (
@@ -106,7 +101,10 @@ function App() {
               setVoidCloud={setVoidCloud}
               voidCounter={voidCounter}
               setVoidCounter={setVoidCounter}
-              counterCheck={counterCheck}
+              // counterCheck={counterCheck}
+              // catchVoid={catchVoid}
+              // setCatchVoid={setCatchVoid}
+              catchTheVoid={catchTheVoid}
             />
           ))}
         </Route>
