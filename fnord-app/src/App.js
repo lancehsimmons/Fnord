@@ -30,15 +30,15 @@ import Post from './components/Post.js'
 import Why from './components/Why.js'
 import Tools from './components/Tools.js'
 import RenderPost from './components/RenderPost.js'
-import { Menu, Submenu } from 'antd'
-
+import { DropdownButton, Dropdown } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
   const [posts, setPosts] = useState([])
   const [toggleFetch, setToggleFetch] = useState(true)
   const [voidCounter, setVoidCounter] = useState(0)
   const [voidCloud, setVoidCloud] = useState('')
-  const [voidFetch, setVoidFetch] = useState(false)
+  // const [voidFetch, setVoidFetch] = useState(false)
   const [catchVoid, setCatchVoid] = useState('')
 
   const API_URL = 'https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU3'
@@ -62,10 +62,6 @@ function App() {
     console.log(catchVoid)
   }
 
-  const handleClick = (e) => {
-    console.log('click ', e);
-  };
-
   return (
     <div className="App">
       <header className="App-header">
@@ -76,16 +72,13 @@ function App() {
           </Link>
           </div>
 
-          <Menu
-        onClick={handleClick()}
-        style={{ width: 256 }}
-        defaultSelectedKeys={['1']}
-        defaultOpenKeys={['sub1']}
-        mode="inline"
-          >
-            <Menu.Item key="1">Option 1</Menu.Item>
-            <Menu.Item key="2">Option 2</Menu.Item>
-      </Menu>
+          <div>
+          <DropdownButton id="dropdown-basic-button" title="Dropdown button">
+            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+          </DropdownButton>
+          </div>
 
             <div>
               <nav>
@@ -104,7 +97,7 @@ function App() {
               </nav>
             </div>
         </div>
-        </header>
+      </header>
 
       <main>
 
