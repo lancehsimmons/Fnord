@@ -63,7 +63,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      <header className="App-header">
         <Link to='/'>
               <h1>Fnord</h1>
         </Link>
@@ -84,7 +84,7 @@ function App() {
               </Link>
             </nav>
           </div>
-        </div>
+        </header>
 
       <main>
 
