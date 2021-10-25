@@ -73,14 +73,23 @@ function App() {
           </div>
 
           <div>
-          <DropdownButton id="dropdown-basic-button" title="Dropdown button">
-            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+          <DropdownButton id="dropdown-basic-button" title="menu">
+            <Dropdown.Item ><Link to='/post'>
+                  <em>post</em>
+                </Link></Dropdown.Item>
+            <Dropdown.Item href="#/action-2"> <Link to='/tools'>
+                  <em>tools</em>
+                </Link></Dropdown.Item>
+            <Dropdown.Item href="#/action-3"><Link to='/how'>
+                  <em>how</em>
+              </Link></Dropdown.Item>
+              <Dropdown.Item href="#/action-3"><Link to='/why'>
+                  <em>why</em>
+                </Link></Dropdown.Item>
           </DropdownButton>
           </div>
 
-            <div>
+            {/* <div>
               <nav>
               <Link to='/post'>
                   <em>post</em>
@@ -95,7 +104,7 @@ function App() {
                   <em>why</em>
                 </Link>
               </nav>
-            </div>
+            </div> */}
         </div>
       </header>
 
