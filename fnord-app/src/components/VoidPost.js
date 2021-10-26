@@ -7,27 +7,29 @@ const AbyssPost = ({ voidCloud, toggleFetch, setToggleFetch, voidFetch, setVoidF
 
   const handleVoidSubmit =  async (ev) => {
     ev.preventDefault()
+    console.log({voidCloud})
 
-    const newVoidPost = {
-      records: [
-        {
-          fields: {
-            title: 'void',
-            body: { voidCloud },
-            author: 'void',
-          }
-        }
-      ]
-    }
+    // const newVoidPost = {
+    //   records: [
+    //     {
+    //       fields: {
+    //         title: 'void',
+    //         body: {voidCloud},
+    //         author: 'void',
+    //       }
+    //     }
+    //   ]
+    // }
 
-    await axios.post(API_URL, newVoidPost);
+    // await axios.post(API_URL, newVoidPost);
     
-    setToggleFetch(!toggleFetch);
+    // setToggleFetch(!toggleFetch);
   }
 
   return (
     <div>
-      <button onclick={(ev) => handleVoidSubmit(ev)}>Void Post</button>
+      <button onClick={(ev) => handleVoidSubmit(ev)}>Void Post</button>
+      {/* <button onClick={() => console.log('clicked void post')}>Void Post</button> */}
 
     </div>
   )
