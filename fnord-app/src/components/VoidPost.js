@@ -2,29 +2,29 @@ import axios from 'axios'
 import { useState } from 'react'
  
 const AbyssPost = ({ voidCloud, toggleFetch, setToggleFetch, voidFetch, setVoidFetch, }) => {
-  const voidCloud = {voidCloud}
+  
 
   const API_URL = 'https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU3'
 
   const handleVoidSubmit =  async (ev) => {
     ev.preventDefault()
-    console.log({voidCloud})
+    console.log(voidCloud)
 
-    // const newVoidPost = {
-    //   records: [
-    //     {
-    //       fields: {
-    //         title: 'void',
-    //         body: voidCloud,
-    //         author: 'void',
-    //       }
-    //     }
-    //   ]
-    // }
+    const newVoidPost = {
+      records: [
+        {
+          fields: {
+            title: 'void',
+            body: voidCloud,
+            author: 'void',
+          }
+        }
+      ]
+    }
 
-    // await axios.post(API_URL, newVoidPost);
+    await axios.post(API_URL, newVoidPost);
     
-    // setToggleFetch(!toggleFetch);
+    setToggleFetch(!toggleFetch);
   }
 
   return (
