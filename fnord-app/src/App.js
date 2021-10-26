@@ -26,6 +26,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import How from './components/How.js'
 import Post from './components/Post.js'
+import AbyssPost from './components/VoidPost.js'
 import Why from './components/Why.js'
 import Tools from './components/Tools.js'
 import RenderPost from './components/RenderPost.js'
@@ -33,17 +34,12 @@ import { DropdownButton, Dropdown } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css';
 
-const cursorStyle = {
-  color: 'red',
-  backgroundColor: 'red',
-}
-
 function App() {
   const [posts, setPosts] = useState([])
   const [toggleFetch, setToggleFetch] = useState(true)
   const [voidCounter, setVoidCounter] = useState(0)
   const [voidCloud, setVoidCloud] = useState('')
-  // const [voidFetch, setVoidFetch] = useState(false)
+  const [voidFetch, setVoidFetch] = useState(false)
   const [catchVoid, setCatchVoid] = useState('')
 
   const API_URL = 'https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU3'
@@ -112,6 +108,14 @@ function App() {
 
         <h3>{voidCounter}</h3>
 
+        <AbyssPost
+          voidCloud={voidCloud}
+          toggleFetch={toggleFetch}
+          setToggleFetch={setToggleFetch}
+          voidFetch={voidFetch}
+          setVoidFetch={setVoidFetch}
+        />
+
         <Route path='/' exact>
           <div >
           {posts.map((post) => (
@@ -132,6 +136,8 @@ function App() {
           ))}
           </div>
         </Route>
+
+
 
         <Route path='/post'>
           <Post
