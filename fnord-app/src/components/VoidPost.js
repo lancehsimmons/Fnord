@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useState } from 'react'
- 
+
 const AbyssPost = ({ voidCloud, toggleFetch, setToggleFetch, voidFetch, setVoidFetch, }) => {
   
 
@@ -9,22 +9,25 @@ const AbyssPost = ({ voidCloud, toggleFetch, setToggleFetch, voidFetch, setVoidF
   const handleVoidSubmit =  async (ev) => {
     ev.preventDefault()
     console.log(voidCloud)
+    var cutupmethod = require('cut-up-method-js')
+    let voidBody = cutupmethod(voidCloud)
+    console.log(voidBody)
 
-    const newVoidPost = {
-      records: [
-        {
-          fields: {
-            title: 'void',
-            body: voidCloud,
-            author: 'void',
-          }
-        }
-      ]
-    }
+    // const newVoidPost = {
+    //   records: [
+    //     {
+    //       fields: {
+    //         title: 'void',
+    //         body: voidCloud,
+    //         author: 'void',
+    //       }
+    //     }
+    //   ]
+    // }
 
-    await axios.post(API_URL, newVoidPost);
+    // await axios.post(API_URL, newVoidPost);
     
-    setToggleFetch(!toggleFetch);
+    // setToggleFetch(!toggleFetch);
   }
 
   return (
