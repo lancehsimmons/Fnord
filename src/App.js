@@ -34,6 +34,8 @@ import { DropdownButton, Dropdown } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css';
 
+const API_URL = `https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=${process.env.REACT_APP_API_KEY}`
+
 function App() {
   const [posts, setPosts] = useState([])
   const [toggleFetch, setToggleFetch] = useState(true)
@@ -42,9 +44,8 @@ function App() {
   const [voidFetch, setVoidFetch] = useState(false)
   const [catchVoid, setCatchVoid] = useState('')
 
-  const API_URL = `https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=${process.env.REACT_APP_API_KEY}`
-
   console.log(process.env.REACT_APP_API_KEY)
+  console.group(API_URL)
 
   useEffect(() => {
     console.log('Getting Posts');
