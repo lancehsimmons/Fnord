@@ -18,7 +18,7 @@ const AbyssPost = ({ voidCloud, toggleFetch, setToggleFetch, voidFetch, setVoidF
     //     {
     //       fields: {
     //         title: 'void',
-    //         body: voidCloud,
+    //         body: voidBody,
     //         author: 'void',
     //       }
     //     }
@@ -33,8 +33,6 @@ const AbyssPost = ({ voidCloud, toggleFetch, setToggleFetch, voidFetch, setVoidF
   return (
     <div>
       <button onClick={(ev) => handleVoidSubmit(ev)}>Void Post</button>
-      {/* <button onClick={() => console.log('clicked void post')}>Void Post</button> */}
-
     </div>
   )
 }
