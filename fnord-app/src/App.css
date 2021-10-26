@@ -6,6 +6,7 @@
 
 .App-header {
   background-color: #f5b504;
+  padding: 20px 0px 20px 0px;
 }
 
 #titlediv {
@@ -22,8 +23,25 @@
 }
 
 .dropdown-toggle {
-  background-color: rgb(252, 217, 100);
+  background-color: #f0a608;
+  border-color: #f5b504;
+}
+
+.dropdown .btn:hover {
+  background-color: rgb(238, 153, 41);
   border-color: rgb(252, 217, 100);
+  /* color: red; */
+}
+
+.dropdown .btn:active {
+  background: rgb(252, 217, 100); 
+  color:#000;
+}
+
+.dropdown .btn:focus {
+  background: rgb(252, 217, 100);
+  border-color: #f0a608; 
+  color:#000;
 }
 
 main {

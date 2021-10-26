@@ -27,9 +27,9 @@ const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, setVoid
 
   return (
     <div id={postData.id} className='post'>
-      <h4><span className='redacted'>{postData.fields.title}</span></h4>
-      <p ><span className='redacted'>{postData.fields.body}</span></p>
-      <h5>{postData.fields.author}</h5>
+      <h6><span className='redacted'>{postData.fields.title}</span></h6>
+      <p><span className='redacted'>{postData.fields.body}</span></p>
+      <h6>{postData.fields.author}</h6>
 
       <button
         id={postData.id}

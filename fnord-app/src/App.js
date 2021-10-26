@@ -96,27 +96,15 @@ function App() {
               
             <Dropdown.Item href='/why'>
               <h5>why</h5>
+              </Dropdown.Item>
+              
+              <Dropdown.Item href='/'>
+              <h5>home</h5>
             </Dropdown.Item>
               
           </DropdownButton>
           </div>
 
-            {/* <div>
-              <nav>
-              <Link to='/post'>
-                  <em>post</em>
-                </Link>
-                <Link to='/tools'>
-                  <em>tools</em>
-                </Link>
-                <Link to='/how'>
-                  <em>how</em>
-                </Link>
-                <Link to='/why'>
-                  <em>why</em>
-                </Link>
-              </nav>
-            </div> */}
         </div>
       </header>
 
@@ -139,7 +127,7 @@ function App() {
               // counterCheck={counterCheck}
               // catchVoid={catchVoid}
               // setCatchVoid={setCatchVoid}
-              catchTheVoid={catchTheVoid}
+              catchTheVoid={catchTheVoid} 
             />
           ))}
           </div>
