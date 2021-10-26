@@ -1,17 +1,18 @@
 import axios from 'axios'
+import cutup from 'cut-up-method-js'
 // import { useState } from 'react'
 
 const API_URL = `https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=${process.env.REACT_APP_API_KEY}`
 
-const AbyssPost = ({ voidCloud, toggleFetch, setToggleFetch, voidFetch, setVoidFetch, }) => {
+const AbyssPost = ({ voidCloud, setVoidCloud, toggleFetch, setToggleFetch, setVoidCounter }) => {
   
 
 
   const handleVoidSubmit =  async (ev) => {
     ev.preventDefault()
     console.log(voidCloud)
-    var cutupmethod = require('cut-up-method-js')
-    let voidBody = cutupmethod(voidCloud)
+    // var cutupmethod = require('cut-up-method-js')
+    let voidBody = cutup(voidCloud)
     console.log(voidBody)
 
     const newVoidPost = {
@@ -27,6 +28,9 @@ const AbyssPost = ({ voidCloud, toggleFetch, setToggleFetch, voidFetch, setVoidF
     }
 
     await axios.post(API_URL, newVoidPost);
+
+    setVoidCloud('')
+    setVoidCounter(0)
     
     setToggleFetch(!toggleFetch);
   }

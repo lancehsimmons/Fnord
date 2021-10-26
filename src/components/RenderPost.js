@@ -2,9 +2,9 @@ import axios from 'axios'
 
 const API_URL = 'https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU3'
 
-const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, setVoidCloud, voidCounter, setVoidCounter, catchTheVoid }) => {
+const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, setVoidCloud, voidCounter, setVoidCounter }) => {
 
-  const deleteBlogPost = async (ev) => {
+  const deletePost = async (ev) => {
     ev.preventDefault()
     await axios.delete(API_URL + `&records[]=${postData.id}`);
 
@@ -15,7 +15,6 @@ const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, setVoid
     ev.preventDefault()
     setVoidCounter(voidCounter + 1)
     setVoidCloud(voidCloud + ` ${postData.fields.body}`)
-    catchTheVoid()
     console.log(voidCloud)
     if (voidCounter > 2) {
       setVoidCloud('')
@@ -36,7 +35,7 @@ const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, setVoid
         onClick={(ev) => addVoid(ev)}
       >void</button>
 
-      <button onClick={(ev) => deleteBlogPost(ev)}>Delete</button>
+      <button onClick={(ev) => deletePost(ev)}>Delete</button>
       <hr/>
     </div>
   )

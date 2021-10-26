@@ -42,7 +42,6 @@ function App() {
   const [voidCounter, setVoidCounter] = useState(0)
   const [voidCloud, setVoidCloud] = useState('')
   const [voidFetch, setVoidFetch] = useState(false)
-  const [catchVoid, setCatchVoid] = useState('')
 
 
   useEffect(() => {
@@ -55,12 +54,6 @@ function App() {
 
     getPosts();
   }, [toggleFetch]);
-
-  const catchTheVoid = () => {
-    setCatchVoid(voidCloud)
-    console.log('void terminal density exceeded')
-    console.log(catchVoid)
-  }
 
 
 
@@ -105,15 +98,19 @@ function App() {
 
       <main>
 
-        <h3>{voidCounter}</h3>
-
+      <Route path='/' exact>
         <AbyssPost
           voidCloud={voidCloud}
+          setVoidCloud={setVoidCloud}
           toggleFetch={toggleFetch}
           setToggleFetch={setToggleFetch}
           voidFetch={voidFetch}
           setVoidFetch={setVoidFetch}
+          setVoidCounter={setVoidCounter}
         />
+        <h3>{voidCounter}</h3>
+      </Route>
+
 
         <Route path='/' exact>
           <div >
@@ -130,7 +127,6 @@ function App() {
               // counterCheck={counterCheck}
               // catchVoid={catchVoid}
               // setCatchVoid={setCatchVoid}
-              catchTheVoid={catchTheVoid} 
             />
           ))}
           </div>
