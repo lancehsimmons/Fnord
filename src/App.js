@@ -44,15 +44,12 @@ function App() {
   const [voidFetch, setVoidFetch] = useState(false)
   const [catchVoid, setCatchVoid] = useState('')
 
-  console.log(process.env.REACT_APP_API_KEY)
-  console.group(API_URL)
 
   useEffect(() => {
     console.log('Getting Posts');
 
     const getPosts = async () => {
       const resp = await axios.get(API_URL);
-      console.log(resp.data);
       setPosts(resp.data.records);
     }
 

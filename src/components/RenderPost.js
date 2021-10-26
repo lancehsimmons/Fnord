@@ -29,7 +29,6 @@ const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, setVoid
     <div id={postData.id} className='post'>
       <h6><span className={postData.fields.author === 'void' ? '' : 'redacted'}>{postData.fields.title}</span></h6>
       <h6><span className={postData.fields.author === 'void' ? '' : 'redacted'}>{postData.fields.body}</span></h6>
-      {/* <p><span className='redacted'>{postData.fields.body}</span></p> */}
       <h6>{`-${postData.fields.author}`}</h6>
 
       <button
