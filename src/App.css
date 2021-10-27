@@ -3,6 +3,7 @@
   color: black;
 }
 
+
 .App-header {
   /* background-color: #db4c18; */
   /* background: rgb(208,21,21);
@@ -56,7 +57,7 @@
 .dropdown .btn:focus {
   background: #b0aed3;
   border-color: transparent; 
-  color:#000;
+  color:rgb(0, 0, 0);
 }
 
 #void-button {
@@ -69,6 +70,18 @@
   background: radial-gradient(ellipse at bottom, #581c1c, #9198e5),
             radial-gradient(ellipse at top, #2a36b8, transparent);
   border-color: transparent;
+}
+
+.btn-dark:hover {
+  border-color: transparent;
+  background: radial-gradient(ellipse at bottom, #960f0f, #9198e5),
+  radial-gradient(ellipse at top, #2a36b8, transparent);
+  color: rgb(238, 161, 161);
+}
+
+.btn-dark:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 main {
@@ -96,22 +109,45 @@ main {
 }
 
 /*
+blurred text and redacted formating idea from here:
+https://codepen.io/adamruf/pen/GZwdrY
 redacted text formatting from here: 
 https://stackoverflow.com/questions/2527765/add-a-background-color-to-text-but-with-space-blank-space-between-lines-of-para
 */
 
+.btn-primary {
+  background-color: #9198e5;
+  border-color: transparent;
+}
+
 .btn-secondary {
   background-color: #6b4f83;
   border-color: transparent;
+}
 
+.btn-secondary:hover {
+  color: rgb(238, 161, 161);
+  background: linear-gradient(#960f0f, #6b4f83);
+  border-color: transparent
 }
 
 .btn-warning {
   background: linear-gradient(#581c1c, #9198e5);
-  /* background: radial-gradient(ellipse at top, #e66465, #9198e5),
-  radial-gradient(ellipse at bottom, #9198e5, transparent); */
   border-color: transparent;
   color: white;
+  outline: none;
+}
+
+.btn-warning:hover {
+  color: rgb(238, 161, 161);
+  background: linear-gradient(#960f0f, #9198e5);
+  border-color: transparent;
+  outline: none;
+}
+
+.btn-warning:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .feed-buttons {
@@ -129,7 +165,7 @@ https://stackoverflow.com/questions/2527765/add-a-background-color-to-text-but-w
   }
 
   .dropdown {
-    margin: 0px 50px 0px 200px
+    margin: 0px 50px 0px 70px
   }
 }
 
