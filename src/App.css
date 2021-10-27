@@ -71,6 +71,11 @@ main {
   text-justify: left;
 }
 
+.feed-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 
 

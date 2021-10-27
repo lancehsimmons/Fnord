@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { Button } from 'react-bootstrap'
 
 const API_URL = 'https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=keyCVov3VmyQc3bU3'
 
@@ -30,12 +31,19 @@ const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, setVoid
       <h6><span className={postData.fields.author === 'void' ? '' : 'redacted'}>{postData.fields.body}</span></h6>
       <h6>{`-${postData.fields.author}`}</h6>
 
-      <button
-        id={postData.id}
-        onClick={(ev) => addVoid(ev)}
-      >void</button>
+      <div className="feed-buttons">
+        <div>
+          <Button
+            id={postData.id}
+            onClick={(ev) => addVoid(ev)}
+          >void</Button>
+        </div>
 
-      <button onClick={(ev) => deletePost(ev)}>Delete</button>
+        <div>
+          <Button onClick={(ev) => deletePost(ev)}>Delete</Button>
+        </div>
+      </div>
+
       <hr/>
     </div>
   )
