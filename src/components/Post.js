@@ -32,24 +32,10 @@ const Post = ({ toggleFetch, setToggleFetch }) => {
 
   return (
     <div>
-      <h3>submit a post</h3>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="title">Title: </label>
-        <input type="text" id="title" onChange={(ev) => setTitle(ev.target.value)} />
-        <br/>
-        <label htmlFor="body">Body: </label>
-        <input type="text" id="body" onChange={(ev) => setBody(ev.target.value)} />
-        <br/>
-        <label htmlFor="author">Author: </label>
-        <input type="text" id="author" onChange={(ev) => setAuthor(ev.target.value)} />
-        <br />
-        <input type="submit" />
-      </form>
-
-      
+      <h3>Express Yourself</h3>
 
       <form onSubmit={handleSubmit}>
-        
+
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Title</Form.Label>
           <Form.Control
