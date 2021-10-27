@@ -3,7 +3,7 @@
 const How = () => {
   return (
     <div>
-      <h4>OK, what's going on here...</h4>
+      <h4>OK, what's going on here?!?</h4>
       <p>There are two ways to post to Fnord: Regular Posts and Void Posts.</p>
       <h5>Regular Posts:</h5>
       <p>What you might think of as a "regular" post, that is, one authored by you, the user, are automatically redacted. Fnord would like to encourage you to engage with your truest thoughts and share them freely, without fear of reproach.</p>

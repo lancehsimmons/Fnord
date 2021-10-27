@@ -1,5 +1,7 @@
 import axios from 'axios'
 import { useState } from 'react'
+import { Form, Button } from 'react-bootstrap'
+
 
 const Post = ({ toggleFetch, setToggleFetch }) => {
   const [title, setTitle] = useState('')
@@ -41,9 +43,41 @@ const Post = ({ toggleFetch, setToggleFetch }) => {
         <label htmlFor="author">Author: </label>
         <input type="text" id="author" onChange={(ev) => setAuthor(ev.target.value)} />
         <br />
-        
         <input type="submit" />
       </form>
+
+      
+
+      <form onSubmit={handleSubmit}>
+        
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Title</Form.Label>
+          <Form.Control
+            type="title"
+            onChange={(ev) => setTitle(ev.target.value)}
+          />
+          <Form.Text className="text-muted"></Form.Text>
+        </Form.Group>
+
+        <Form.Label>Body</Form.Label>
+          <Form.Control
+            as="textarea"
+            style={{ height: '170px' }}
+            onChange={(ev) => setBody(ev.target.value)}
+          />
+
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Author</Form.Label>
+          <Form.Control
+            type="author"
+            onChange={(ev) => setAuthor(ev.target.value)}
+          />
+          <Form.Text className="text-muted">Who goes there</Form.Text>
+        </Form.Group>
+
+        <input type="submit" />
+
+        </form>
       
     </div>
   )

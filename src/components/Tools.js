@@ -18,14 +18,14 @@ const Tools = () => {
   return (
     <div>
       <h3>Tools</h3>
-      <p>Fnord provides the basic functionality of the cut-up technique for your own creative endeavors.</p>
-      <p>Simply add a text to each of following fields and click "Submit."</p>
+      <p>Fnord provides the basic functionality of the cut-up technique for your use own creative endeavors.</p>
+      <p>Simply add text to each of following fields and click "Submit."</p>
       <p>Your new intermingled text will appear below</p>
       <hr/>
 
       <Form onSubmit={handleCutupSubmit}>
 
-        {/* <FloatingLabel controlId="floatingTextarea" label="Enter a text for cut-up"> */}
+
         <Form.Label>Enter a text to cut-up</Form.Label>
           <Form.Control
             as="textarea"
@@ -33,7 +33,6 @@ const Tools = () => {
             style={{ height: '170px' }}
             onChange={(ev) => setCutup1(ev.target.value)}
           />
-        {/* </FloatingLabel> */}
         <br />
 
         <Form.Label>Enter another text to cut-up</Form.Label>
