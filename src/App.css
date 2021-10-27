@@ -86,11 +86,12 @@ main {
 }
 
 .redacted {
-  display: inline;
+  filter: blur(4px);
+  /* display: inline;
   background: black;
   padding: 3px;
   margin: 5px;
-  line-height: 2.2em;
+  line-height: 2.2em; */
   text-justify: left;
 }
 
