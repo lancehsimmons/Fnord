@@ -18,7 +18,7 @@ const Tools = () => {
   return (
     <div>
       <h3>Tools</h3>
-      <p>Fnord provides the basic functionality of the cut-up technique for your use own creative endeavors.</p>
+      <p>Fnord provides the basic functionality of the cut-up technique for use in your own creative endeavors.</p>
       <p>Simply add text to each of following fields and click "Submit."</p>
       <p>Your new intermingled text will appear below</p>
       <hr/>
