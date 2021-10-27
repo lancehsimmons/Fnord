@@ -5,7 +5,7 @@
 }
 
 .App-header {
-  background-color: #f5b504;
+  background-color: #f0a608;
   padding: 20px 0px 20px 0px;
 }
 
@@ -67,7 +67,18 @@ main {
 }
 
 
+
+
 /*
 redacted text formatting from here: 
 https://stackoverflow.com/questions/2527765/add-a-background-color-to-text-but-with-space-blank-space-between-lines-of-para
 */
+
+@media (min-width: 700px) {
+  #titlediv {
+    justify-content: flex-start;
+  }
+  .dropdown {
+    margin: 0px 50px 0px 100px
+  }
+}

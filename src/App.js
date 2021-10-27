@@ -45,7 +45,6 @@ function App() {
 
 
   useEffect(() => {
-    console.log('Getting Posts');
 
     const getPosts = async () => {
       const resp = await axios.get(API_URL);
