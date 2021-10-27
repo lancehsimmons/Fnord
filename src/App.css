@@ -3,6 +3,14 @@
   color: black;
 }
 
+a {
+  color: #8784c4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #960f0f;
+}
 
 .App-header {
   /* background-color: #db4c18; */
