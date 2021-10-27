@@ -1,6 +1,6 @@
 import axios from 'axios'
 import cutup from 'cut-up-method-js'
-// import { useState } from 'react'
+import { Button } from 'react-bootstrap'
 
 const API_URL = `https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=${process.env.REACT_APP_API_KEY}`
 
@@ -18,9 +18,9 @@ const AbyssPost = ({ voidCloud, setVoidCloud, toggleFetch, setToggleFetch, setVo
       records: [
         {
           fields: {
-            title: 'void',
+            title: 'From the Void',
             body: voidBody,
-            author: 'void',
+            author: 'Void',
           }
         }
       ]
@@ -36,7 +36,7 @@ const AbyssPost = ({ voidCloud, setVoidCloud, toggleFetch, setToggleFetch, setVo
 
   return (
     <div>
-      <button onClick={(ev) => handleVoidSubmit(ev)}>Void Post</button>
+      <Button variant="dark" onClick={(ev) => handleVoidSubmit(ev)}>Void Emit</Button>
     </div>
   )
 }

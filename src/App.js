@@ -97,17 +97,19 @@ function App() {
 
       <main>
 
-      <Route path='/' exact>
-        <AbyssPost
-          voidCloud={voidCloud}
-          setVoidCloud={setVoidCloud}
-          toggleFetch={toggleFetch}
-          setToggleFetch={setToggleFetch}
-          voidFetch={voidFetch}
-          setVoidFetch={setVoidFetch}
-          setVoidCounter={setVoidCounter}
-        />
-        <h3>{voidCounter}</h3>
+        <Route path='/' exact>
+        <div id='void-button'>
+          <AbyssPost
+            voidCloud={voidCloud}
+            setVoidCloud={setVoidCloud}
+            toggleFetch={toggleFetch}
+            setToggleFetch={setToggleFetch}
+            voidFetch={voidFetch}
+            setVoidFetch={setVoidFetch}
+            setVoidCounter={setVoidCounter}
+          />
+          {/* <h3>{voidCounter}</h3> */}
+        </div>
       </Route>
 
 
