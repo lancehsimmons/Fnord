@@ -17,6 +17,14 @@
   justify-content: space-between;
 }
 
+#main-title {
+  margin: 0
+}
+
+#subtitle {
+  margin: 7px 0px 0px 0px;
+}
+
 .App-header a {
   color: rgb(233, 231, 245);
   text-decoration: none;
@@ -88,9 +96,14 @@ redacted text formatting from here:
 https://stackoverflow.com/questions/2527765/add-a-background-color-to-text-but-with-space-blank-space-between-lines-of-para
 */
 
-@media (min-width: 700px) {
+@media (min-width: 666px) {
   #titlediv {
     justify-content: flex-start;
+  }
+
+  #void-button {
+    display: flex;
+    justify-content: center;
   }
 
   .dropdown {

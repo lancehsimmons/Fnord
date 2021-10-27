@@ -62,7 +62,7 @@ function App() {
         <div id='titlediv'>
           <div id='title'>
           <Link to='/'>
-              <h1>Fnord</h1>
+              <h1 id='main-title'>Fnord</h1>
               <h6 id='subtitle'>Social Paramedia</h6>
           </Link>
           </div>
