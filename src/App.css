@@ -85,9 +85,12 @@ main {
 
 .feed-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
+.delete-button {
+  margin: 0px 0px 0px 200px
+}
 
 
 
@@ -103,15 +106,6 @@ https://stackoverflow.com/questions/2527765/add-a-background-color-to-text-but-w
 
   .dropdown {
     margin: 0px 50px 0px 100px
-  }
-
-  .delete-button {
-    margin: 0px 0px 0px 100px
-  }
-
-  .feed-buttons {
-    display: flex;
-    justify-content: flex-start;
   }
 }
 
