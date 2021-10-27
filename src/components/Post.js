@@ -61,7 +61,7 @@ const Post = ({ toggleFetch, setToggleFetch }) => {
           <Form.Text className="text-muted">Who goes there</Form.Text>
         </Form.Group>
 
-        <input type="submit" />
+        <Button type="submit">SUBMIT</Button>
 
         </form>
       

@@ -1,12 +1,19 @@
 .App {
-  /* text-align: center; */
   margin: 0;
-  color: black
+  color: black;
+  background-color: #bdc2ef64;
 }
 
 .App-header {
-  background-color: #f0a608;
-  padding: 20px 0px 20px 0px;
+  /* background-color: #db4c18; */
+  /* background: rgb(208,21,21);
+  background: linear-gradient(153deg, rgba(208,21,21,1) 37%, rgba(2,0,36,1) 98%); */
+  /* background: radial-gradient(#e66465, #9198e5); */
+  /* background: rgb(208,21,21);
+  background: linear-gradient(157deg, rgba(208,21,21,1) 41%, rgba(58,8,83,1) 100%); */
+  background: radial-gradient(ellipse at top, #e66465, #9198e5),
+            radial-gradient(ellipse at bottom, #9198e5, transparent);
+  padding: 20px 0px 15px 0px;
 }
 
 #titlediv {
@@ -30,7 +37,7 @@
   text-decoration: none;
 }
 
-.dropdown-toggle {
+/* .dropdown-toggle {
   background-color: #f0a608;
   border-color: #f5b504;
 }
@@ -38,7 +45,6 @@
 .dropdown .btn:hover {
   background-color: rgb(238, 153, 41);
   border-color: rgb(252, 217, 100);
-  /* color: red; */
 }
 
 .dropdown .btn:active {
@@ -50,15 +56,23 @@
   background: rgb(252, 217, 100);
   border-color: #f0a608; 
   color:#000;
-}
+} */
 
 #void-button {
   display: flex;
   justify-content: flex-end;
 }
 
+.btn-dark {
+  background-color: transparent;
+  background: radial-gradient(ellipse at bottom, #e66465, #9198e5),
+            radial-gradient(ellipse at top, #2a36b8, transparent);
+  border-color: transparent;
+}
+
 main {
   margin: 10px 50px 30px 50px;
+
 }
 
 .feed {
@@ -79,8 +93,23 @@ main {
   text-justify: left;
 }
 
+/*
+redacted text formatting from here: 
+https://stackoverflow.com/questions/2527765/add-a-background-color-to-text-but-with-space-blank-space-between-lines-of-para
+*/
+
 .btn-secondary {
-  background-color: rgb(128, 154, 209);
+  background-color: #6b4f83;
+  border-color: transparent;
+
+}
+
+.btn-warning {
+  background: linear-gradient(#e66465, #9198e5);
+  /* background: radial-gradient(ellipse at top, #e66465, #9198e5),
+  radial-gradient(ellipse at bottom, #9198e5, transparent); */
+  border-color: transparent;
+  color: white;
 }
 
 .feed-buttons {
@@ -89,15 +118,8 @@ main {
 }
 
 .delete-button {
-  margin: 0px 0px 0px 200px
+  margin: 0px 0px 0px 250px
 }
-
-
-
-/*
-redacted text formatting from here: 
-https://stackoverflow.com/questions/2527765/add-a-background-color-to-text-but-with-space-blank-space-between-lines-of-para
-*/
 
 @media (min-width: 666px) {
   #titlediv {
@@ -105,7 +127,7 @@ https://stackoverflow.com/questions/2527765/add-a-background-color-to-text-but-w
   }
 
   .dropdown {
-    margin: 0px 50px 0px 100px
+    margin: 0px 50px 0px 200px
   }
 }
 

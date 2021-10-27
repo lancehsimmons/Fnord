@@ -34,7 +34,7 @@ const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, setVoid
       <div className='feed-buttons'>
         <div>
           <Button
-            variant='secondary'
+            variant="warning"
             id={postData.id}
             onClick={(ev) => addVoid(ev)}
           >void</Button>
