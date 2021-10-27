@@ -71,6 +71,10 @@ main {
   text-justify: left;
 }
 
+.btn-secondary {
+  background-color: rgb(128, 154, 209);
+}
+
 .feed-buttons {
   display: flex;
   justify-content: space-between;
@@ -88,7 +92,18 @@ https://stackoverflow.com/questions/2527765/add-a-background-color-to-text-but-w
   #titlediv {
     justify-content: flex-start;
   }
+
   .dropdown {
     margin: 0px 50px 0px 100px
   }
+
+  .delete-button {
+    margin: 0px 0px 0px 100px
+  }
+
+  .feed-buttons {
+    display: flex;
+    justify-content: flex-start;
+  }
+
 }

@@ -18,9 +18,9 @@ const AbyssPost = ({ voidCloud, setVoidCloud, toggleFetch, setToggleFetch, setVo
       records: [
         {
           fields: {
-            title: 'From the Void',
+            title: 'void',
             body: voidBody,
-            author: 'Void',
+            author: 'void',
           }
         }
       ]

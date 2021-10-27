@@ -31,16 +31,17 @@ const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, setVoid
       <h6><span className={postData.fields.author === 'void' ? '' : 'redacted'}>{postData.fields.body}</span></h6>
       <h6>{`-${postData.fields.author}`}</h6>
 
-      <div className="feed-buttons">
+      <div className='feed-buttons'>
         <div>
           <Button
+            variant='secondary'
             id={postData.id}
             onClick={(ev) => addVoid(ev)}
           >void</Button>
         </div>
 
         <div>
-          <Button onClick={(ev) => deletePost(ev)}>Delete</Button>
+          <Button className='delete-button' variant='secondary' onClick={(ev) => deletePost(ev)}>Delete</Button>
         </div>
       </div>
 
