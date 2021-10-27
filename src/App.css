@@ -1,7 +1,6 @@
 .App {
   margin: 0;
   color: black;
-  background-color: #bdc2ef64;
 }
 
 .App-header {
@@ -11,7 +10,7 @@
   /* background: radial-gradient(#e66465, #9198e5); */
   /* background: rgb(208,21,21);
   background: linear-gradient(157deg, rgba(208,21,21,1) 41%, rgba(58,8,83,1) 100%); */
-  background: radial-gradient(ellipse at top, #e66465, #9198e5),
+  background: radial-gradient(ellipse at top, #581c1c, #9198e5),
             radial-gradient(ellipse at bottom, #9198e5, transparent);
   padding: 20px 0px 15px 0px;
 }
@@ -25,11 +24,13 @@
 }
 
 #main-title {
-  margin: 0
+  margin: 0;
+  font-size: 6vw;
 }
 
 #subtitle {
-  margin: 7px 0px 0px 0px;
+  margin: 0;
+  font-size: 3vw;
 }
 
 .App-header a {
@@ -37,26 +38,26 @@
   text-decoration: none;
 }
 
-/* .dropdown-toggle {
-  background-color: #f0a608;
-  border-color: #f5b504;
+.dropdown-toggle {
+  background-color: #8784c4;
+  border-color: transparent;
 }
 
 .dropdown .btn:hover {
-  background-color: rgb(238, 153, 41);
-  border-color: rgb(252, 217, 100);
+  background-color: #b0aed3;
+  border-color: transparent;
 }
 
 .dropdown .btn:active {
-  background: rgb(252, 217, 100); 
+  background: #b0aed3; 
   color:#000;
 }
 
 .dropdown .btn:focus {
-  background: rgb(252, 217, 100);
-  border-color: #f0a608; 
+  background: #b0aed3;
+  border-color: transparent; 
   color:#000;
-} */
+}
 
 #void-button {
   display: flex;
@@ -65,7 +66,7 @@
 
 .btn-dark {
   background-color: transparent;
-  background: radial-gradient(ellipse at bottom, #e66465, #9198e5),
+  background: radial-gradient(ellipse at bottom, #581c1c, #9198e5),
             radial-gradient(ellipse at top, #2a36b8, transparent);
   border-color: transparent;
 }
@@ -105,7 +106,7 @@ https://stackoverflow.com/questions/2527765/add-a-background-color-to-text-but-w
 }
 
 .btn-warning {
-  background: linear-gradient(#e66465, #9198e5);
+  background: linear-gradient(#581c1c, #9198e5);
   /* background: radial-gradient(ellipse at top, #e66465, #9198e5),
   radial-gradient(ellipse at bottom, #9198e5, transparent); */
   border-color: transparent;
