@@ -123,9 +123,6 @@ function App() {
               setVoidCloud={setVoidCloud}
               voidCounter={voidCounter}
               setVoidCounter={setVoidCounter}
-              // counterCheck={counterCheck}
-              // catchVoid={catchVoid}
-              // setCatchVoid={setCatchVoid}
             />
           ))}
           </div>
