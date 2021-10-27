@@ -13,7 +13,6 @@ const AbyssPost = ({ voidCloud, setVoidCloud, toggleFetch, setToggleFetch, setVo
     console.log(voidCloud)
     // var cutupmethod = require('cut-up-method-js')
     let voidBody = cutup(voidCloud)
-    console.log(voidBody)
 
     const newVoidPost = {
       records: [
