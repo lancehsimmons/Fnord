@@ -67,7 +67,7 @@ function App() {
           </Link>
           </div>
 
-          <div>
+          <div id='menu-div'>
             <DropdownButton id="dropdown-basic-button" title="menu">
               
             <Dropdown.Item href='/post'>
