@@ -33,7 +33,6 @@ import RenderPost from './components/RenderPost.js'
 import { DropdownButton, Dropdown } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
-// import './components/Tools.css'
 
 const API_URL = `https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=${process.env.REACT_APP_API_KEY}`
 
@@ -44,7 +43,6 @@ function App() {
   const [voidCloud, setVoidCloud] = useState('')
   const [voidFetch, setVoidFetch] = useState(false)
 
-
   useEffect(() => {
 
     const getPosts = async () => {
@@ -54,8 +52,6 @@ function App() {
 
     getPosts();
   }, [toggleFetch]);
-
-
 
   return (
     <div className="App">
@@ -110,7 +106,6 @@ function App() {
             setVoidFetch={setVoidFetch}
             setVoidCounter={setVoidCounter}
           />
-          {/* <h3>{voidCounter}</h3> */}
         </div>
       </Route>
 
@@ -132,8 +127,6 @@ function App() {
           </div>
         </Route>
 
-
-
         <Route path='/post'>
           <Post
             toggleFetch={toggleFetch}
@@ -147,7 +140,6 @@ function App() {
 
         <Route path='/why'><Why /></Route>
           
-        
       </main>
 
     </div>

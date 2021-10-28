@@ -82,10 +82,9 @@ https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=
 | Airtable setup            |    H     |      1hrs      |      .5hr     |     .5hr    |
 | plan/pseudo-code          |    H     |      1hrs      |      1hr      |     1hr     |
 | react structure           |    H     |      3hrs      |      3.25hr   |    3.25hr   |
-|  post logic               |    H     |      7hrs      |      5hr      |             |
-|  delete logic             |    H     |      2hrs      |      40min    |             |
-| abyss logic               |    H     |      4hrs      |               |             |
-| tools logic               |    H     |      3hrs      |               |             |
-| embedded component info   |    H     |      3hrs      |               |             |
-| css styling               |    H     |      7hrs      |               |             |
-| Total                     |    H     |      34hrs     |               |             |
+| post logic                |    H     |      7hrs      |      12.5hr   |     12.5hr  |
+| delete logic              |    H     |      2hrs      |      1hr      |     1hr     |
+| tools logic               |    H     |      3hrs      |      3hr      |     3hr     |
+| info pages content        |    H     |      3hrs      |      3hr      |     3hr     |
+| css styling               |    H     |      7hrs      |     12hr      |    12hr     |
+| Total                     |    H     |      30hrs     |               |     41.25hr |
