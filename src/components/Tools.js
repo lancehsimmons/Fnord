@@ -13,7 +13,6 @@ const Tools = () => {
     setCutupText(cutItUp)
   }
 
-
   return (
     <div>
       <h3>Tools</h3>
