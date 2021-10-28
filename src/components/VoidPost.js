@@ -37,7 +37,7 @@ The title and author of all Void Posts are default set to 'void'
   }
 /* The element that renders from this component is a button labeled "Void Emit"
 Clicking that button triggers creating a new Void Post
-The content of that new post is set by clicking the void button on preexisting posts.
+The content of that new post is set by clicking the void button on up to 3 preexisting posts.
 */
   return (
     <div>
