@@ -65,7 +65,6 @@ https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=
   - how: how posting and void posting works
   - post: write to api and render posts to root
   - tools: text scrambler and text folder place holders for added functionality later
-  - abyss: placeholder abyss page rendering example of a limited conglomeration of all posts
 
 ## POST-MVP
 
