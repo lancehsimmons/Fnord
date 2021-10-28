@@ -2,6 +2,8 @@
 
 Social Paramedia Platform
 
+https://relaxed-swartz-19230e.netlify.app/
+
 - Your anti misapperception portal
 - Social Paramedia
 - Fluxanon Hub
