@@ -1,0 +1,33 @@
+#main-fold-div {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+#fold-div-1{
+  /* position: relative; */
+  background-color: white;
+}
+#fold-block-1 {
+  position: absolute;
+  color: green;
+  background-color: white;
+  transform: translate(50%), translateY(-100%);
+  z-index: 1;
+}
+#fold-p-1 {
+  position: relative;
+  background-color: white;
+  z-index: 2;
+}
+
+/* #fold-div-2{
+  position: relative;
+  background-color: white;
+}
+#fold-p-2{
+  position: absolute;
+  color: green;
+  background-color: white;
+  transform: translate(-50%);
+} */

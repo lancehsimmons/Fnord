@@ -32,7 +32,8 @@ import Tools from './components/Tools.js'
 import RenderPost from './components/RenderPost.js'
 import { DropdownButton, Dropdown } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
-import './App.css';
+import './App.css'
+// import './components/Tools.css'
 
 const API_URL = `https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=${process.env.REACT_APP_API_KEY}`
 

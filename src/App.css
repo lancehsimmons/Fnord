@@ -107,7 +107,7 @@ main {
 }
 
 .redacted {
-  filter: blur(4px);
+  filter: blur(5px);
   /* display: inline;
   background: black;
   padding: 3px;
@@ -167,6 +167,7 @@ https://stackoverflow.com/questions/2527765/add-a-background-color-to-text-but-w
   margin: 0px 0px 0px 250px
 }
 
+
 @media (min-width: 666px) {
   #titlediv {
     justify-content: flex-start;
@@ -180,6 +181,7 @@ https://stackoverflow.com/questions/2527765/add-a-background-color-to-text-but-w
 @media (min-width: 800px) {
   #void-button {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin: 0px 0px 0px 275px
   }
 }
