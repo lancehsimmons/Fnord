@@ -1,12 +1,14 @@
 import axios from 'axios'
 import { useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
+import { Redirect } from 'react-router-dom'
 
 
 const Post = ({ toggleFetch, setToggleFetch }) => {
   const [title, setTitle] = useState('')
   const [body, setBody] = useState('')
   const [author, setAuthor] = useState('')
+  const [redirectHome, setRedirectHome] = useState(false);
 
   const API_URL = `https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=${process.env.REACT_APP_API_KEY}`
 
@@ -27,8 +29,13 @@ const Post = ({ toggleFetch, setToggleFetch }) => {
 
     await axios.post(API_URL, newPost);
     
+    setRedirectHome(true)
     setToggleFetch(!toggleFetch);
   }
+
+  if (redirectHome) {
+    return <Redirect to="/"/>
+}
 
   return (
     <div>
@@ -51,6 +58,7 @@ const Post = ({ toggleFetch, setToggleFetch }) => {
             style={{ height: '170px' }}
             onChange={(ev) => setBody(ev.target.value)}
           />
+          <br/>
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Author</Form.Label>
