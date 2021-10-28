@@ -32,46 +32,45 @@ function App() {
 
   return (
     <div className="App">
+{/* Root title navigation bar  */}
       <header className="App-header">
+{/* Title */}
         <div id='titlediv'>
           <div id='title'>
-          <Link to='/'>
+            <Link to='/'>
               <h1 id='main-title'>Fnord</h1>
               <h6 id='subtitle'>Social Paramedia</h6>
-          </Link>
+            </Link>
           </div>
-
+{/* Menu dropdown */}
           <div id='menu-div'>
             <DropdownButton id="dropdown-basic-button" title="menu">
-              
-            <Dropdown.Item href='/post'>
-              <h6>post</h6>
-            </Dropdown.Item>
-              
-              <Dropdown.Item href='/tools'>
-              <h6>tools</h6>
-            </Dropdown.Item>
-              
-            <Dropdown.Item href='/how'>
-              <h6>how</h6>
+              <Dropdown.Item href='/post'>
+                <h6>post</h6>
               </Dropdown.Item>
-              
-            <Dropdown.Item href='/why'>
-              <h6>why</h6>
+                
+                <Dropdown.Item href='/tools'>
+                <h6>tools</h6>
               </Dropdown.Item>
-              
-            <Dropdown.Item href='/'>
-              <h6>home</h6>
-            </Dropdown.Item>
-              
+                
+              <Dropdown.Item href='/how'>
+                <h6>how</h6>
+                </Dropdown.Item>
+                
+              <Dropdown.Item href='/why'>
+                <h6>why</h6>
+                </Dropdown.Item>
+                
+              <Dropdown.Item href='/'>
+                <h6>home</h6>
+              </Dropdown.Item>
           </DropdownButton>
           </div>
-
         </div>
       </header>
 
       <main>
-
+{/* Void Emit button, triggers Void Post through VoidPost component*/}
         <Route path='/' exact>
         <div id='void-button'>
           <AbyssPost
@@ -85,8 +84,7 @@ function App() {
           />
         </div>
       </Route>
-
-
+{/* Renders all posts through RenderPost component */}
         <Route path='/' exact>
           <div >
           {posts.map((post) => (
@@ -103,14 +101,14 @@ function App() {
           ))}
           </div>
         </Route>
-
+{/* Page with form for adding a new post to the feed */}
         <Route path='/post'>
           <Post
             toggleFetch={toggleFetch}
             setToggleFetch={setToggleFetch}
           />
         </Route>
-
+{/* Routes for static pages: tools, directions, and inspirations */}
         <Route path='/tools'><Tools /></Route>
 
         <Route path='/how'><How /></Route>

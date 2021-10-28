@@ -8,7 +8,6 @@ const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, setVoid
   const deletePost = async (ev) => {
     ev.preventDefault()
     await axios.delete(API_URL + `&records[]=${postData.id}`);
-
     setToggleFetch(!toggleFetch);
   }
   
@@ -17,12 +16,11 @@ const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, setVoid
     setVoidCounter(voidCounter + 1)
     setVoidCloud(voidCloud + ` ${postData.fields.body}`)
     console.log(voidCloud)
-    if (voidCounter > 2) {
+    // You can't add more then three existing posts to the "Void Cloud"
+    if (voidCounter > 3) {
       setVoidCloud('')
       setVoidCounter(0)
-      console.log('toggleVoidFetch')
     } 
-      console.log(`add void ${postData.id} was clicked`)
   }
 
   return (
@@ -33,13 +31,13 @@ const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, setVoid
 
       <div className='feed-buttons'>
         <div>
+          {/* This "void" button adds the conents of the post to the "Void Cloud" */}
           <Button
             variant="warning"
             id={postData.id}
             onClick={(ev) => addVoid(ev)}
           >void</Button>
         </div>
-
         <div>
           <Button className='delete-button' variant='secondary' onClick={(ev) => deletePost(ev)}>Delete</Button>
         </div>

@@ -11,8 +11,8 @@ const How = () => {
       <p>The second, more unusual type of posts on Fnord are called Void Posts. These are can be generated with just a few clicks:</p>
       <ol>
         <li>Select a couple regular posts that feel intriguing. Click the "void" button that appears at the bottom of each post</li>
-        <li>Each void post you select adds the body of that post to the <span>Void Cloud.</span></li>
-        <li>Once three posts have been selected, the <span>Void Cloud</span> has reached Terminal Density</li>
+        <li>Each void post you select adds the body of that post to the Void Cloud.</li>
+        <li>Once three posts have been selected, the Void Cloud has reached Terminal Density</li>
         <li>Click the Emit button that appears at the top of the feed to generate a new Void Post.</li>
         <li>The information that was swallowed by the Void emerges now, in a new form, as a Void Post, twisted by the chaos of the void</li>
       </ol>

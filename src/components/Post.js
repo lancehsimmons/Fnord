@@ -3,7 +3,6 @@ import { useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
 import { Redirect } from 'react-router-dom'
 
-
 const Post = ({ toggleFetch, setToggleFetch }) => {
   const [title, setTitle] = useState('')
   const [body, setBody] = useState('')
@@ -14,7 +13,6 @@ const Post = ({ toggleFetch, setToggleFetch }) => {
 
   const handleSubmit =  async (ev) => {
     ev.preventDefault()
-
     const newPost = {
       records: [
         {
@@ -26,9 +24,7 @@ const Post = ({ toggleFetch, setToggleFetch }) => {
         }
       ]
     }
-
     await axios.post(API_URL, newPost);
-    
     setRedirectHome(true)
     setToggleFetch(!toggleFetch);
   }
@@ -40,9 +36,7 @@ const Post = ({ toggleFetch, setToggleFetch }) => {
   return (
     <div>
       <h3>Express Yourself</h3>
-
       <form onSubmit={handleSubmit}>
-
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Title</Form.Label>
           <Form.Control
@@ -70,9 +64,7 @@ const Post = ({ toggleFetch, setToggleFetch }) => {
         </Form.Group>
 
         <Button type="submit">SUBMIT</Button>
-
-        </form>
-      
+        </form>     
     </div>
   )
 }

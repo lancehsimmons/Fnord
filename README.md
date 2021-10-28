@@ -9,8 +9,6 @@ https://relaxed-swartz-19230e.netlify.app/
 - Fluxanon Hub
 - Media Massager
 - Act of Information Freedom
-- You don’t know what doesn’t hurt you
-
 
 ## Project Description
 
@@ -18,7 +16,7 @@ Fnord [sic](https://en.wikipedia.org/wiki/Principia_Discordia) seeks the liberat
 
 Users are prompted to make posts expressing their thoughts under a pseudonym. However, when displayed, the contents of these posts are redacted. In this way users are able to freely express themselves without fear of reproach. The other option for engagement takes two parts: users can select previous posts to be added to the "void cloud." Then, by clicking the "Void Emit" button a new fully-visible post is generated from an agglomeration of the material added to the cloud. All posts can be added to the cloud or deleted. 
 
-Fnord also provides tools for processing texts with the methods used by Dadaists and later popularized by William Burroughs and Bryan Gysin. Tools acceptes up to two texts entered by the user and processes them into one new text. The new congolmerate text serves as the starting point for novel concepts or approaches.
+Fnord also provides tools for processing texts with the methods used by Dadaists and later popularized by William Burroughs and Bryan Gysin. Tools acceptes up to two texts entered by the user and processes them into one new text. The new congolmerate text is intended to serve as the starting point for novel concepts or approaches.
 
 ## Wireframes and Component Hierarchy
 

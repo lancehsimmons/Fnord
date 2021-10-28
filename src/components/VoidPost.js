@@ -6,12 +6,14 @@ const API_URL = `https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key
 
 const AbyssPost = ({ voidCloud, setVoidCloud, toggleFetch, setToggleFetch, setVoidCounter }) => {
   
-
-
+/* voidCloud passes a string from App
+That string is processed using the cutup method imported above
+The newly arranged string is then set to the body a new Void Post
+The title and author of all Void Posts are default set to 'void'
+*/
   const handleVoidSubmit =  async (ev) => {
     ev.preventDefault()
     console.log(voidCloud)
-    // var cutupmethod = require('cut-up-method-js')
     let voidBody = cutup(voidCloud)
 
     const newVoidPost = {
@@ -33,7 +35,10 @@ const AbyssPost = ({ voidCloud, setVoidCloud, toggleFetch, setToggleFetch, setVo
     
     setToggleFetch(!toggleFetch);
   }
-
+/* The element that renders from this component is a button labeled "Void Emit"
+Clicking that button triggers creating a new Void Post
+The content of that new post is set by clicking the void button on preexisting posts.
+*/
   return (
     <div>
       <Button variant="dark" onClick={(ev) => handleVoidSubmit(ev)}>Void Emit</Button>

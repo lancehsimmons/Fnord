@@ -22,8 +22,6 @@ const Tools = () => {
       <hr />
 
       <Form onSubmit={handleCutupSubmit}>
-
-
         <Form.Label>Enter a text to cut-up</Form.Label>
         <Form.Control
           as="textarea"
@@ -32,7 +30,6 @@ const Tools = () => {
           onChange={(ev) => setCutup1(ev.target.value)}
         />
         <br />
-
         <Form.Label>Enter another text to cut-up</Form.Label>
         <Form.Control
           as="textarea"
@@ -50,8 +47,6 @@ const Tools = () => {
 
       <p>{cutupText}</p>
       <hr />
-      
-
     </div>
   )
 }
