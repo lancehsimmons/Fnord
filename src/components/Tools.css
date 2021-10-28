@@ -9,14 +9,27 @@
   background-color: white;
 }
 #fold-block-1 {
-  position: absolute;
-  color: green;
+  position: relative;
+  color: white;
   background-color: white;
-  transform: translate(50%), translateY(-100%);
+  transform: translate(50%) translateY(-109%);
   z-index: 1;
 }
 #fold-p-1 {
+  position: absolute;
+  background-color: white;
+  z-index: 2;
+}
+
+#fold-block-2 {
   position: relative;
+  color: white;
+  background-color: white;
+  transform: translate(50%) translateY(-109%);
+  z-index: 1;
+}
+#fold-p-2 {
+  position: absolute;
   background-color: white;
   z-index: 2;
 }
