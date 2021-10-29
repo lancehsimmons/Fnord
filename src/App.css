@@ -171,3 +171,20 @@ https://codepen.io/adamruf/pen/GZwdrY
     justify-content: center;
   }
 }
+
+@media (max-width: 480px) {
+  .delete-button {
+    margin: 0px 0px 0px 50px
+  }
+
+  #main-title {
+    margin: 0;
+    font-size: 8vw;
+  }
+  
+  #subtitle {
+    margin: 0;
+    font-size: 4vw;
+  }
+}
+
