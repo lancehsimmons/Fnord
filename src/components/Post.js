@@ -27,15 +27,15 @@ const Post = ({ toggleFetch, setToggleFetch }) => {
     }
     if (body === '' || title === '' || author === '') {
       alert('please try again. use all fields to post.')
-    } else { 
-    await axios.post(API_URL, newPost);
-    setRedirectHome(true)
-    setToggleFetch(!toggleFetch);
+    } else {
+      await axios.post(API_URL, newPost);
+      setRedirectHome(true)
+      setToggleFetch(!toggleFetch);
     }
   }
 
-      if (redirectHome) {
-        return <Redirect to="/" />
+  if (redirectHome) {
+    return <Redirect to="/" />
   }
 
   return (
