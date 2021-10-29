@@ -13,27 +13,31 @@ The title and author of all Void Posts are default set to 'void'
 */
   const handleVoidSubmit =  async (ev) => {
     ev.preventDefault()
-    console.log(voidCloud)
     let voidBody = cutup(voidCloud)
+// Alert notice in case void post has no content
+    if (voidBody === '') {
+      alert('select something to add to the Void Cloud')
+    } else {
 
-    const newVoidPost = {
-      records: [
-        {
-          fields: {
-            title: 'void',
-            body: voidBody,
-            author: 'void',
+      const newVoidPost = {
+        records: [
+          {
+            fields: {
+              title: 'void',
+              body: voidBody,
+              author: 'void',
+            }
           }
-        }
-      ]
-    }
+        ]
+      }
 
-    await axios.post(API_URL, newVoidPost);
+      await axios.post(API_URL, newVoidPost);
 
-    setVoidCloud('')
-    setVoidCounter(0)
+      setVoidCloud('')
+      setVoidCounter(0)
     
-    setToggleFetch(!toggleFetch);
+      setToggleFetch(!toggleFetch);
+    }
   }
 /* The element that renders from this component is a button labeled "Void Emit"
 Clicking that button triggers creating a new Void Post

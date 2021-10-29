@@ -15,7 +15,6 @@ const DisplayPost = ({ postData, toggleFetch, setToggleFetch, voidCloud, setVoid
     ev.preventDefault()
     setVoidCounter(voidCounter + 1)
     setVoidCloud(voidCloud + ` ${postData.fields.body}`)
-    console.log(voidCloud)
     // You can't add more then three existing posts to the "Void Cloud"
     if (voidCounter > 3) {
       setVoidCloud('')

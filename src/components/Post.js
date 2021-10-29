@@ -11,8 +11,9 @@ const Post = ({ toggleFetch, setToggleFetch }) => {
 
   const API_URL = `https://api.airtable.com/v0/appMdfGQRBqQW1C0k/Table%201?api_key=${process.env.REACT_APP_API_KEY}`
 
-  const handleSubmit =  async (ev) => {
+  const handleSubmit = async (ev) => {
     ev.preventDefault()
+
     const newPost = {
       records: [
         {
@@ -24,14 +25,18 @@ const Post = ({ toggleFetch, setToggleFetch }) => {
         }
       ]
     }
+    if (body === '' || title === '' || author === '') {
+      alert('please try again. use all fields to post.')
+    } else { 
     await axios.post(API_URL, newPost);
     setRedirectHome(true)
     setToggleFetch(!toggleFetch);
+    }
   }
 
-  if (redirectHome) {
-    return <Redirect to="/"/>
-}
+      if (redirectHome) {
+        return <Redirect to="/" />
+  }
 
   return (
     <div>
@@ -47,12 +52,12 @@ const Post = ({ toggleFetch, setToggleFetch }) => {
         </Form.Group>
 
         <Form.Label>Body</Form.Label>
-          <Form.Control
-            as="textarea"
-            style={{ height: '170px' }}
-            onChange={(ev) => setBody(ev.target.value)}
-          />
-          <br/>
+        <Form.Control
+          as="textarea"
+          style={{ height: '170px' }}
+          onChange={(ev) => setBody(ev.target.value)}
+        />
+        <br />
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Author</Form.Label>
@@ -64,10 +69,16 @@ const Post = ({ toggleFetch, setToggleFetch }) => {
         </Form.Group>
 
         <Button type="submit">SUBMIT</Button>
-        </form>     
+      </form>
     </div>
   )
 }
 
 
 export default Post
+
+
+    // if (body === '') {
+    //   alert('your post has no conent. try again.')
+    // } else {
+          // }
